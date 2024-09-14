@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Namaz Notifier</title>
+    <link rel="icon" type="image/jpg" href="images/ayatCardQuran.png">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="my-body">
+        <nav data-mdb-navbar-init class="navbar sticky-top navbar-light bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="images/icon.png" alt="namaz" srcset="" height="80px" />
+                <span class="navbar-brand mb-0 h1 text-white">Success <span style="color: #7bb82b">
+                        Reminder</span></span>
+                <ul class="navbar-nav ms-auto">
+                    <!-- Icon dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="flag flag-pakistan flag m-0"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item"><i class="flag flag-pakistan"></i>Pakistan
+                                    <i class="fa fa-check text-success ms-2"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="p-4 mt-5">
+                        <span style="color: #7bb82b; font-size: 50px">
+                            Namaz Reminder</span>
+                        <p>
+                            Namaz, also known as Salah or Salat, is a fundamental pillar of
+                            Islamic practice. It is a form of worship that Muslims perform
+                            as a direct communication with Allah. Namaz is a spiritual
+                            ritual observed by millions of Muslims worldwide, and it holds
+                            great significance in Islam.
+                        </p>
+                        <b class="text-black-50 info">
+                            You will receive prayer reminder notifications through our web or app. Use our platform to
+                            stay connected with your prayer schedule:)
+                        </b>
+                        <!-- Add more content here if needed -->
+                        <div class="card mt-5 bg-gray text-white">
+                            <div class="card-header">Quote</div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0 ">
+                                    <p>
+                                        "Success echoes through the call of prayer five times a
+                                        day. The choice is yours—will you answer the call and
+                                        embrace the path to success, or let the opportunity slip
+                                        away?"
+                                    </p>
+                                    <footer class="blockquote-footer text-white-50">
+                                        Someone who develops this
+                                        <cite title="Source Title">.......</cite>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <img src="images/Quran1.png" alt="Your Image"
+                        class="img-fluid animate__animated animate__backInUp" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container ">
+
+            <article class="wrapper1">
+
+                <div class="row1">
+
+                    <!-- card 1 -->
+                    <div class="card1 col1 col-auto splitContent1">
+                        <div class="container1">
+
+                            <!-- Start row -->
+                            <div class="row1">
+
+                                <!-- Start col -->
+                                <div class="col1 col-auto1">
+                                    <div class="cardSect1">
+                                        <div class="item1">
+
+                                            <div class="head1">
+                                                <div class="icon1">
+                                                    <i class="fa-solid fa-clock big"></i>
+                                                </div>
+                                                <div class="title1">
+                                                    Current Time
+                                                </div>
+                                            </div>
+                                            <div class="Title1 " id="showTime">
+                                                <div class="spinner-border text-success" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End col -->
+
+                                <!--Divider!-->
+                                <div class="col1 col-auto1" id="dividerWrap1">
+                                    <div class="contentDivider1">
+                                        <div class="dividedText1"><strong>AND</strong></div>
+                                    </div>
+                                </div>
+                                <!--divider end-->
+
+                                <!-- Start col -->
+                                <div class="col1 col-auto1">
+                                    <div class="cardSect1">
+                                        <div class="item1">
+                                            <div class="head1">
+                                                <div class="icon1">
+                                                    <i class="fa-solid fa-person-praying big"></i>
+                                                </div>
+                                                <div class="title1">
+                                                    Incoming Prayer
+                                                </div>
+                                            </div>
+                                            <div class="content1 " id="namazAfter">
+                                                <div class="spinner-border text-success" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End col -->
+
+                            </div>
+                            <!-- End Row-->
+                        </div>
+                        <!-- End Container-->
+                    </div>
+                    <!-- End Card 1 -->
+
+                    <!-- card 1 -->
+                    <!--End wrapper row-->
+            </article>
+
+            <div class="container cards mt-5 rounded-3 p-4 ">
+                <h2 class="color text-light">Namaz Time In Jakarta</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Image Column -->
+                                    <div class="col-md-4">
+                                        <img src="images/namaz2.jpg" class="img-fluid" alt="Image Alt Text">
+                                    </div>
+                                    <!-- Text Column -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title cl-g">Fajr</h5>
+                                        <p class="card-text f-lg clock" id="fajrTime"><span class="spinner-grow text-success" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Image Column -->
+                                    <div class="col-md-4">
+                                        <img src="images/namaz.jpg" class="img-fluid" alt="Image Alt Text">
+                                    </div>
+                                    <!-- Text Column -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title cl-g">Zuhr</h5>
+                                        <p class="card-text f-lg clock" id="zuhrTime"><span class="spinner-grow text-success" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Image Column -->
+                                    <div class="col-md-4">
+                                        <img src="images/namaz2.jpg" class="img-fluid" alt="Image Alt Text">
+                                    </div>
+                                    <!-- Text Column -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title cl-g">Asr</h5>
+                                        <p class="card-text f-lg clock" id="asrTime"><span class="spinner-grow text-success" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Image Column -->
+                                    <div class="col-md-4">
+                                        <img src="images/namaz.jpg" class="img-fluid" alt="Image Alt Text">
+                                    </div>
+                                    <!-- Text Column -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title cl-g">Maghrib</h5>
+                                        <p class="card-text f-lg clock" id="maghribTime"><span class="spinner-grow text-success" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Image Column -->
+                                    <div class="col-md-4">
+                                        <img src="images/namaz2.jpg" class="img-fluid" alt="Image Alt Text">
+                                    </div>
+                                    <!-- Text Column -->
+                                    <div class="col-md-8">
+                                        <h5 class="card-title cl-g">Isha</h5>
+                                        <p class="card-text f-lg clock" id="ishaTime"><span class="spinner-grow text-success" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                          </span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more cards as needed -->
+
+                </div>
+            </div>
+        </div>
+        <footer class="bg-body-tertiary text-center text-white text-lg-start mt-5 cl-dg ">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2024 Develop by:
+                <a class="text-white">Muhammad Usman with <i class="fa-solid fa-heart red"></i> </a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </div>
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
